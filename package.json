@@ -2,7 +2,7 @@
   "name": "pokemon-types",
   "private": true,
   "version": "0.0.1",
-  "description": "Pokémon type abstraction",
+  "description": "Pokémon type list and effectiveness calculation",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src",
