@@ -7,6 +7,7 @@
   "scripts": {
     "lint": "eslint src",
     "build": "babel src -d lib",
+    "prepare": "yarn run build",
     "test": "ava"
   },
   "keywords": [
@@ -17,6 +18,9 @@
 			"babel-register"
 		]
   },
+  "files" : [
+    "lib"
+  ],
   "author": "hakobe <hakobe@gmail.com>",
   "license": "MIT",
   "devDependencies": {
