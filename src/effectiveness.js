@@ -11,14 +11,14 @@ type EffectivenessMsg =
   | 'こうかは いまひとつの ようだ'
   | 'こうかが ない みたいだ・・・'
 
-type EffectivenessValue = 4 | 2 | 1 | 0.5 | 0
+type EffectivenessValue = 4 | 2 | 1 | 0.5 | 0.25 | 0
 
 const valueToMessage = (ev: EffectivenessValue): EffectivenessMsg => {
   if (ev === 4 || ev === 2) {
     return 'こうかは ばつぐんだ！'
   } else if (ev === 1) {
     return null
-  } else if (ev === 0.5) {
+  } else if (ev === 0.5 || ev === 0.25) {
     return 'こうかは いまひとつの ようだ'
   } else if (ev === 0) {
     return 'こうかが ない みたいだ・・・'
