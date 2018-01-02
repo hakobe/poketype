@@ -1,5 +1,7 @@
 # pokemon-type
 
+[![CircleCI](https://circleci.com/gh/hakobe/pokemon-types.svg?style=svg)](https://circleci.com/gh/hakobe/pokemon-types)
+
 Pokémon's type list and effectiveness calculation
 
 ## Synopsis
