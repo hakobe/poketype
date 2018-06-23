@@ -1,15 +1,15 @@
-# pokemon-type
+# poketype
 
-[![CircleCI](https://circleci.com/gh/hakobe/pokemon-types.svg?style=svg)](https://circleci.com/gh/hakobe/pokemon-types)
+[![CircleCI](https://circleci.com/gh/hakobe/poketype.svg?style=svg)](https://circleci.com/gh/hakobe/pokemon-types)
 
-Pokemon have particular characteristics, such as natures, abilities, typing, and moves.  This project focuses on the typing aspect of Pokemon, and how particular typing of Pokemon can be effective against another. 
+Pokemon have particular characteristics, such as natures, abilities, typing, and moves.  This project focuses on the typing aspect of Pokemon, and how particular typing of Pokemon can be effective against another.
 
-Pokemon can have up to 2 different types, such as “Water” and “Flying”. By using the existing type list of all Pokemon, This project aims determine how effective it is against another. As an example, a Pokemon that is “Water” and “Flying” is incredibly ineffective against Pokemon of the “Electric” typing. This project aims to calculate effectiveness and reveal the results to the user. 
+Pokemon can have up to 2 different types, such as “Water” and “Flying”. By using the existing type list of all Pokemon, This project aims determine how effective it is against another. As an example, a Pokemon that is “Water” and “Flying” is incredibly ineffective against Pokemon of the “Electric” typing. This project aims to calculate effectiveness and reveal the results to the user.
 
 ## Synopsis
 
 ```javascript
-import poketype from 'pokemon-type'
+import poketype from 'poketype'
 
 const { ほのお, くさ } = poketype.Types
 
