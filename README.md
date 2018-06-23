@@ -9,7 +9,7 @@ Pokemon can have up to 2 different types, such as “Water” and “Flying”. 
 ## Synopsis
 
 ```javascript
-import poketype from '.'
+import poketype from 'pokemon-type'
 
 const { ほのお, くさ } = poketype.Types
 
