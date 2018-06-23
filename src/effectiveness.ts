@@ -1,30 +1,30 @@
-import { Pokemon } from "./pokemon";
-import { Type } from "./types";
+import { Pokemon } from './pokemon'
+import { Type } from './types'
 
 type EffectivenessMsg =
-  | "こうかは ばつぐんだ！"
+  | 'こうかは ばつぐんだ！'
   | null
-  | "こうかは いまひとつの ようだ"
-  | "こうかが ない みたいだ・・・";
+  | 'こうかは いまひとつの ようだ'
+  | 'こうかが ない みたいだ・・・'
 
-type EffectivenessValue = 4 | 2 | 1 | 0.5 | 0.25 | 0;
+type EffectivenessValue = 4 | 2 | 1 | 0.5 | 0.25 | 0
 
 const valueToMessage = (ev: EffectivenessValue): EffectivenessMsg => {
   if (ev === 4 || ev === 2) {
-    return "こうかは ばつぐんだ！";
+    return 'こうかは ばつぐんだ！'
   } else if (ev === 1) {
-    return null;
+    return null
   } else if (ev === 0.5 || ev === 0.25) {
-    return "こうかは いまひとつの ようだ";
+    return 'こうかは いまひとつの ようだ'
   } else if (ev === 0) {
-    return "こうかが ない みたいだ・・・";
+    return 'こうかが ない みたいだ・・・'
   }
-  throw new Error("invalid flow");
-};
+  throw new Error('invalid flow')
+}
 
 export interface Effectiveness {
-  message: EffectivenessMsg;
-  value: EffectivenessValue;
+  message: EffectivenessMsg
+  value: EffectivenessValue
 }
 
 /* tslint:disable prettier */
@@ -51,19 +51,19 @@ const typeChart: EffectivenessValue[][] = [
 /* tslint:enable */
 
 const single = (skillType: Type, targetType: Type): EffectivenessValue =>
-  typeChart[skillType][targetType];
+  typeChart[skillType][targetType]
 
 export const calc = (
   skillType: Type,
-  targetPokemon: Pokemon,
+  targetPokemon: Pokemon
 ): Effectiveness => {
-  const type1EV = single(skillType, targetPokemon.type1);
+  const type1EV = single(skillType, targetPokemon.type1)
   const type2EV = targetPokemon.type2
     ? single(skillType, targetPokemon.type2)
-    : 1;
-  const EV: EffectivenessValue = (type1EV * type2EV) as EffectivenessValue;
+    : 1
+  const EV: EffectivenessValue = (type1EV * type2EV) as EffectivenessValue
   return {
     message: valueToMessage(EV),
-    value: EV,
-  };
-};
+    value: EV
+  }
+}
