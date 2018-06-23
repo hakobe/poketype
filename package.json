@@ -8,7 +8,6 @@
   "scripts": {
     "lint": "tslint --project .",
     "build": "tsc",
-    "prepare": "yarn run build",
     "test": "yarn run build && jest"
   },
   "keywords": [
