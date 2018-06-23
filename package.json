@@ -1,6 +1,6 @@
 {
   "name": "pokemon-types",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "description": "Pokémon type list and effectiveness calculation",
   "main": "lib/index.js",
@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "tslint --project .",
     "build": "tsc",
-    "test": "yarn run build && jest"
+    "prepare": "npm run build",
+    "test": "npm run build && jest"
   },
   "keywords": [
     "pokemon"
