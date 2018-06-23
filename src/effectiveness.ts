@@ -27,7 +27,7 @@ export interface Effectiveness {
   value: EffectivenessValue;
 }
 
-/* eslint-disable */
+/* tslint:disable prettier */
 const typeChart: EffectivenessValue[][] = [
   [ 1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1, 0.5,  0,  1,  1, 0.5,  0], // ノーマル
   [ 1, 0.5, 0.5,  1,  2,  2,  1,  1,  1,  1,  1,  2, 0.5,  1, 0.5,  1,  2,  1], // ほのお
@@ -48,7 +48,7 @@ const typeChart: EffectivenessValue[][] = [
   [ 1, 0.5, 0.5, 0.5,  1,  2,  1,  1,  1,  1,  1,  1,  2,  1,  1,  1, 0.5,  2], // はがね
   [ 1, 0.5,  1,  1,  1,  1,  2, 0.5,  1,  1,  1,  1,  1,  1,  2,  2, 0.5,  1], // フェアリー
 ];
-/* eslint-enable */
+/* tslint:enable */
 
 const single = (skillType: Type, targetType: Type): EffectivenessValue =>
   typeChart[skillType][targetType];
