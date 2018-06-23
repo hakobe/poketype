@@ -11,7 +11,7 @@ Pokemon can have up to 2 different types, such as “Water” and “Flying”. 
 ```javascript
 import poketype from 'poketype'
 
-const { ほのお, くさ } = poketype.Types
+const { ほのお, くさ } = poketype.Types // English type names are supported
 
 const フシギダネ = poketype.createPokemon(くさ)
 const ひのこ = ほのお
