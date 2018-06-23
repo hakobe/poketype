@@ -1,5 +1,5 @@
 {
-  "name": "poketypes",
+  "name": "poketype",
   "private": false,
   "version": "0.0.1",
   "description": "Pokémon type list and effectiveness calculation",
