@@ -12,55 +12,55 @@ import {
   むし,
   ゴースト,
   ノーマル,
-  フェアリー,
- } from "./src";
+  フェアリー
+} from './src'
 
-it("ヒトカゲの　ひのこ！", () => {
-  const フシギダネ = new Pokemon(くさ);
-  const ひのこ = ほのお;
+it('ヒトカゲの　ひのこ！', () => {
+  const フシギダネ = new Pokemon(くさ)
+  const ひのこ = ほのお
 
   expect(calcEffectiveness(ひのこ, フシギダネ)).toEqual({
-    message: "こうかは ばつぐんだ！",
-    value: 2,
-  });
-});
+    message: 'こうかは ばつぐんだ！',
+    value: 2
+  })
+})
 
-it("ピカチュウの　かみなり！", () => {
-  const ギャラドス = new Pokemon(みず, ひこう);
-  const かみなり = でんき;
+it('ピカチュウの　かみなり！', () => {
+  const ギャラドス = new Pokemon(みず, ひこう)
+  const かみなり = でんき
 
   expect(calcEffectiveness(かみなり, ギャラドス)).toEqual({
-    message: "こうかは ばつぐんだ！",
-    value: 4,
-  });
-});
+    message: 'こうかは ばつぐんだ！',
+    value: 4
+  })
+})
 
-it("ミミッキュの じゃれつく！", () => {
-  const リザードン = new Pokemon(ほのお, ひこう);
-  const じゃれつく = フェアリー;
+it('ミミッキュの じゃれつく！', () => {
+  const リザードン = new Pokemon(ほのお, ひこう)
+  const じゃれつく = フェアリー
 
   expect(calcEffectiveness(じゃれつく, リザードン)).toEqual({
-    message: "こうかは いまひとつの ようだ",
-    value: 0.5,
-  });
-});
+    message: 'こうかは いまひとつの ようだ',
+    value: 0.5
+  })
+})
 
-it("アブリーの　むしのさざめき！", () => {
-  const ルカリオ = new Pokemon(かくとう, はがね);
-  const むしのさざめき = むし;
+it('アブリーの　むしのさざめき！', () => {
+  const ルカリオ = new Pokemon(かくとう, はがね)
+  const むしのさざめき = むし
 
   expect(calcEffectiveness(むしのさざめき, ルカリオ)).toEqual({
-    message: "こうかは いまひとつの ようだ",
-    value: 0.25,
-  });
-});
+    message: 'こうかは いまひとつの ようだ',
+    value: 0.25
+  })
+})
 
-it("カビゴンの　のしかかり！", () => {
-  const ゲンガー = new Pokemon(ゴースト);
-  const のしかかり = ノーマル;
+it('カビゴンの　のしかかり！', () => {
+  const ゲンガー = new Pokemon(ゴースト)
+  const のしかかり = ノーマル
 
   expect(calcEffectiveness(のしかかり, ゲンガー)).toEqual({
-    message: "こうかが ない みたいだ・・・",
-    value: 0,
-  });
-});
+    message: 'こうかが ない みたいだ・・・',
+    value: 0
+  })
+})
