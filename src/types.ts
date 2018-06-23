@@ -1,23 +1,42 @@
 export enum Type {
-  ノーマル,
-  ほのお,
-  みず,
-  でんき,
-  くさ,
-  こおり,
-  かくとう,
-  どく,
-  じめん,
-  ひこう,
-  エスパー,
-  むし,
-  いわ,
-  ゴースト,
-  ドラゴン,
-  あく,
-  はがね,
-  フェアリー
+  ノーマル = 0,
+  ほのお = 1,
+  みず = 2,
+  でんき = 3,
+  くさ = 4,
+  こおり = 5,
+  かくとう = 6,
+  どく = 7,
+  じめん = 8,
+  ひこう = 9,
+  エスパー = 10,
+  むし = 11,
+  いわ = 12,
+  ゴースト = 13,
+  ドラゴン = 14,
+  あく = 15,
+  はがね = 16,
+  フェアリー = 17,
+  Normal = 0,
+  Fire = 1,
+  Water = 2,
+  Electric = 3,
+  Grass = 4,
+  Ice = 5,
+  Fighting = 6,
+  Poison = 7,
+  Ground = 8,
+  Flying = 9,
+  Psychic = 10,
+  Bug = 11,
+  Rock = 12,
+  Ghost = 13,
+  Dragon = 14,
+  Dark = 15,
+  Steel = 16,
+  Fiary = 17
 }
+
 export const ノーマル = Type.ノーマル
 export const ほのお = Type.ほのお
 export const みず = Type.みず
@@ -36,3 +55,22 @@ export const ドラゴン = Type.ドラゴン
 export const あく = Type.あく
 export const はがね = Type.はがね
 export const フェアリー = Type.フェアリー
+
+export const Normal = Type.Normal
+export const Fire = Type.Fire
+export const Water = Type.Water
+export const Electric = Type.Electric
+export const Grass = Type.Grass
+export const Ice = Type.Ice
+export const Fighting = Type.Fighting
+export const Poison = Type.Poison
+export const Ground = Type.Ground
+export const Flying = Type.Flying
+export const Psychic = Type.Psychic
+export const Bug = Type.Bug
+export const Rock = Type.Rock
+export const Ghost = Type.Ghost
+export const Dragon = Type.Dragon
+export const Dark = Type.Dark
+export const Steel = Type.Steel
+export const Fiary = Type.Fiary
